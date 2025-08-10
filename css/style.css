@@ -1,0 +1,14 @@
+* {box-sizing: border-box;} /* Config padrão de todo projeto */
+body { margin: 50px 0; background-color: #F6F6F6}
+
+img {display: block; margin: auto; border-radius: 20px;}
+
+.ap {text-align: center; margin-top: 10px;} 
+.ap p.name {color:darkslategrey; margin: 5px 0;}
+.ap a {font-size: 18px; color: darkslategrey;}
+.ap a:hover {color: darkcyan;}
+.ap h1#title {margin: 30px 0 0 0;}
+
+ul {list-style-type: none; border: 2px solid black; padding: 20px 0; width: 350px; margin: 10px auto; }
+ul p {margin-top: 0; margin-bottom: 20px;}
+ul li {text-decoration:underline;}
