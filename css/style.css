@@ -1,5 +1,11 @@
 * {box-sizing: border-box;} /* Config padrão de todo projeto */
-body { margin: 50px 0; background-color: #F6F6F6}
+body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-serif;}
+
+.barlow-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 
 img {display: block; margin: auto; border-radius: 20px;}
 
