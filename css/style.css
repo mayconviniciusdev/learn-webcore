@@ -1,7 +1,7 @@
 * {box-sizing: border-box;} /* Config padrão de todo projeto */
 body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-serif;}
 
-.barlow-semibold {
+.barlow-condensed-semibold {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -17,4 +17,9 @@ img {display: block; margin: auto; border-radius: 20px;}
 
 ul {list-style-type: none; border: 2px solid black; padding: 20px 0; width: 350px; margin: 10px auto; }
 ul p {margin-top: 0; margin-bottom: 20px;}
-ul li {text-decoration:underline;}
+ul li {text-decoration: underline;}
+
+ol {list-style-position: inside; margin: 50px auto; text-align: start; width: 350px;}
+ol p {margin-bottom: 0;}
+.inside-list {border: 0; list-style-type: disc; padding: 0 20px}
+.inside-list li {text-decoration: line-through;}
