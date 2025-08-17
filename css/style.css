@@ -1,25 +1,52 @@
 * {box-sizing: border-box;} /* Config padrão de todo projeto */
-body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-serif;}
-
-.barlow-condensed-semibold {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
+body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-serif; text-align: center;}
+.barlow-condensed-semibold {font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-style: normal;}
 
 img {display: block; margin: auto; border-radius: 20px;}
 
-.ap {text-align: center; margin-top: 10px;} 
-.ap p.name {color:darkslategrey; margin: 5px 0;}
+.ap .name {color: darkslategrey; margin: 5px;}
 .ap a {font-size: 18px; color: darkslategrey;}
 .ap a:hover {color: darkcyan;}
-.ap h1#title {margin: 30px 0 0 0;}
+.ap h1#title {margin: 20px 0 0 0}
 
-ul {list-style-type: none; border: 2px solid black; padding: 20px 0; width: 350px; margin: 10px auto; }
-ul p {margin-top: 0; margin-bottom: 20px;}
+/* manipulando listas */
+.list {display: flex; align-items: center; justify-content: center;}
+ul, ol {margin: 5px 0 30px 0;}
+ul p, ol p {margin: 10px 0;}
+ul {list-style-type: none; border: 2px solid black; padding: 5px 10px; text-align: end; }
 ul li {text-decoration: underline;}
 
-ol {list-style-position: inside; margin: 50px auto; text-align: start; width: 350px;}
-ol p {margin-bottom: 0;}
-.inside-list {border: 0; list-style-type: disc; padding: 0 20px}
-.inside-list li {text-decoration: line-through;}
+ol { list-style-type: none; text-align: start; padding: 5px 10px;}
+.inside-list {border: 0; list-style-type: disc; padding: 0px 30px; margin: 0;}
+.inside-list li {text-decoration: line-through; text-align: start;}
+
+/* manipulando tabelas */
+table {width: 500px; margin: 0 auto;}
+table thead {background-color: #4D4D4D; color: #F6F6F6;}
+th, td {text-align: left; padding: 5px;}
+tbody td {border-bottom: 1px solid #4D4D4D;}
+tbody tr:nth-child(even) {background-color: #CCC;}
+tbody tr:hover {background-color: lightslategrey;}
+
+/* manipulando formulários */
+.form { max-width: 500px; margin: 50px auto; text-align: start;}
+.form h2 {color: darkslategrey; margin: 0;}
+
+form .label {display: flex; gap: 5px;}
+form label {margin: 20px 0;}
+.label label {width: 100%;}
+
+.age {display: flex; flex-direction: column; margin: 0 0 20px 0;}
+.age label {width: 100%; margin: 0 ;}
+
+form .select {display: flex; justify-content: space-between; align-items: end;}
+select.cat {width: 70% !important; font-size: 12px !important; padding: 5px !important; appearance: none; -webkit-appearance: none; -moz-appearance: none;}
+input[type=text], input[type=email], textarea, select.cat {width: 100%; font-size: 12px; padding: 10px; border: 1px solid #ccc; border-radius: 10px; outline: 0; margin-top: 5px;}
+textarea {resize: none; width: 100%;}
+
+.term {align-items: center; display: flex; gap: 5px; margin: 20px 0 5px 0;}
+.termLink {color: #000; text-decoration: none;}
+.termLink:hover {text-decoration: underline;}
+
+.submit {width: 100%; padding: 10px; background-color: #EEE; border: 1px solid #DDD; cursor: pointer; border-radius: 5px; font-weight: bold;}
+.submit:hover {background-color: #DDD;}

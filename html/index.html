@@ -21,31 +21,120 @@
       <a href="https://mayconviniciusdev.com">Acesse aqui meu site...</a>
       <h1 id="title">Estudos de <i>HTML5</i> e <i>CSS3</i>!</h1>
       
-      <ul>
-        <p><mark>Conceitos aprendidos:</mark></p>
-        <li>HTML e CSS</li>
-        <li>Formatação de textos</li>
-        <li>Comentário no HTML e CSS</li>
-        <li>Identação</li>
-        <li>Atributos</li>
-      </ul>
+      <!-- LISTAS -->
+      <div class="list">
+        <ul>
+          <p><mark>Conceitos aprendidos:</mark></p>
+          <li>HTML e CSS</li>
+          <li>Formatação de textos</li>
+          <li>Comentário no HTML e CSS</li>
+          <li>Identação</li>
+          <li>Atributos</li>
+        </ul>
 
-      <ol type="I">
-        <p><mark>Adicionamos também:</mark></p>
-        <li>Fontes externas</li>
-        <li>
-          Listas, dentro de listas (Coisas p/ aprender):
-          <ul class="inside-list">
-            <li>Tabelas</li>
-            <li>Formulários</li>
-          </ul>
-        </li>
-        <li>Comentário no HTML e CSS</li>
-        <li>Identação</li>
-        <li>Atributos</li>
-      </ol>
+        <ol>
+          <p><mark>Adicionamos também:</mark></p>
+          <li>Fontes externas</li>
+          <li>
+            Listas, dentro de listas (Coisas p/ aprender):
+            <ul class="inside-list">
+              <li>Tabelas</li>
+              <li>Formulários</li>
+            </ul>
+          </li>
+          <li>Identação</li>
+        </ol>
+      </div>
+    </section>
+      
+    <!-- TABELAS -->
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td>Vinicius</td>
+            <td>Rosa</td>
+          </tr>
 
+          <tr>
+            <td>Mara</td>
+            <td>Regina</td>
+          </tr>
+
+          <tr>
+            <td>Laura</td>
+            <td>Rosa</td>
+          </tr>
+
+          <tr>
+            <td>Maycon</td>
+            <td>Vinícius</td>
+          </tr>
+
+          <tr>
+            <td>Regina</td>
+            <td>Rosa</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FORMS -->
+    <section class="form">
+      <h2>Tire suas dúvidas!</h2>
+
+      <form action="/html/login.html" method="POST">
+        <div class="label">
+          <label>
+            Como você se chama?<br/>
+            <input type="text" name="name" required minlength="4">
+          </label>
+
+          <label>
+            Qual seu email?<br/>
+            <input type="email" name="email" regex="(^[a-zA-Z0-9_.+\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$)" re>
+          </label>
+        </div>
+
+        <div class="age">
+          <label>
+            Em que ano você nasceu?
+            <input type="date" name="birthdate" required min="2000-01-01">
+          </label>
+
+          <label>
+              Meses na plataforma?
+              <input type="number" name="age" required max="10">
+          </label>
+        </div>
+
+        <div class="select">
+          Categoria da dúvida:
+          <select class="cat" required>
+            <option value="geral">Geral</option>
+            <option value="plataforma">Plataforma</option>
+            <option value="investimentos">Ivestimentos</option>
+            <option value="servicos">Serviços</option>
+          </select>
+        </div>
+
+        <textarea name="description" required>Qual a sua dúvida?</textarea>
+
+        <label class="term">
+           <input type="checkbox" required minlength="10">
+            Declaro que li e aceito os 
+            <a href="/html/termosdeuso.html" target="_blank" class="termLink">termos de uso!</a>
+        </label>
+        
+        <input type="submit" value="ENVIAR DÚVIDA" class="submit">
+      </form>
     </section>
   </body>
 </html>
