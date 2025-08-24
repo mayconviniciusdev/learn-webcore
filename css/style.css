@@ -1,13 +1,22 @@
-* {box-sizing: border-box;} /* Config padrão de todo projeto */
-body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-serif; text-align: center;}
-.barlow-condensed-semibold {font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-style: normal;}
+/* default project configuration */
+* { box-sizing: border-box; margin: 0; padding: 0; } 
+body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-serif; }
+.barlow-condensed-semibold { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-style: normal; }
+.container, .ap { max-width: 1180px; margin: 0 auto; }
 
-img {display: block; margin: auto; border-radius: 20px;}
+.header { margin: 0 2% 20px 2%; }
+.header .name { color: darkslategrey; font-size: 30px; margin-bottom: 4px; }
+.header .links { display: flex; gap: 10px; }
+.links p { color: darkslategrey; text-decoration: underline; font-style: italic;}
+.links span { color: darkslategrey; }
+.links a { color: gray; text-decoration: none; }
+.links a:hover { color: darkslategrey; transition:all 1s linear;}
 
-.ap .name {color: darkslategrey; margin: 5px;}
-.ap a {font-size: 18px; color: darkslategrey;}
-.ap a:hover {color: darkcyan;}
-.ap h1#title {margin: 20px 0 0 0}
+.image {display: flex; justify-content: space-between; margin: 0 2%; gap: 10px;}
+.image picture {flex: 1;}
+picture:first-child img { border-top-left-radius: 30px; }
+picture:last-child img { border-bottom-right-radius: 30px; }
+img {width: 100%;}
 
 /* manipulando listas */
 .list {display: flex; align-items: center; justify-content: center;}

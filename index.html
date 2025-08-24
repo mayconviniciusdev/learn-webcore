@@ -30,18 +30,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
-  <body> <!-- Conteúdo da Página/Website -->
-    <img
-    src="https://mayconviniciusdev.com/profilePicture.jpg" 
-    alt="Foto de Maycon Vinicius"
-    width="200px"/>
+  <!-- content -->
+  <body>
+    <div class="container">
+      <header class="header">
+        <p class="name barlow-condensed-semibold">Maycon Vinícius — Desenvolvedor Web</p>
+
+        <div class="links">
+          <p>Conheça meu trabalho</p>
+          <span>→</span>
+          <a href="https://mayconviniciusdev.com/"> [ Site ]</a>
+          <a href="https://github.com/mayconviniciusdev/">[ GitHub ]</a>
+          <a href="https://www.linkedin.com/in/mayconviniciusdev/">[ LinkedIn ]</a>
+          <a href="https://www.instagram.com/mayconviniciusrosa/">[ Instagram ]</a>
+        </div>
+      </header>
+
+      <!-- responsive images -->
+      <section class="image"> 
+        <picture>
+          <source media="(min-width: 1000px)" srcset="./images/image-4.jpeg">
+          <source media="(min-width: 650px)" srcset="./images/image-2.jpeg">
+          <img src="./images/image-3.jpeg" alt="Imagem responsiva de teste">
+        </picture>
+
+         <picture>
+          <source media="(min-width: 1000px)" srcset="./images/image-2.jpeg">
+          <source media="(min-width: 650px)" srcset="./images/image-4.jpeg">
+          <img src="./images/image-1.jpeg" alt="Imagem responsiva de teste">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1000px)" srcset="./images/image-3.jpeg">
+          <source media="(min-width: 650px)" srcset="./images/image-1.jpeg">
+          <img src="./images/image-4.jpeg" alt="Imagem responsiva de teste">
+        </picture>
+        
+        <picture>
+          <source media="(min-width: 1000px)" srcset="./images/image-1.jpeg">
+          <source media="(min-width: 650px)" srcset="./images/image-3.jpeg">
+          <img src="./images/image-2.jpeg" alt="Imagem responsiva de teste">
+        </picture>
+      </section>
+    </div>
+    
 
     <section class="ap">
-      <p class="name barlow-semibold">Maycon Vinícius</p>
-      <a href="https://mayconviniciusdev.com">Acesse aqui meu site...</a>
+      
       <h1 id="title">Estudos de <i>HTML5</i> e <i>CSS3</i>!</h1>
       
       <!-- LISTAS -->
