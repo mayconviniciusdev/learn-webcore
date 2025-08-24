@@ -18,12 +18,11 @@ picture:first-child img { border-top-left-radius: 30px; }
 picture:last-child img { border-bottom-right-radius: 30px; }
 img { width: 100%; }
 
+/* manipulating lists */
 .learning { margin: 20px 2% 0 2%; }
 .learning h1 { color: darkslategrey; margin-bottom: 4px; }
 .learning h1 span { background-color: darkslategrey; padding: 0 10px; color: #F6F6F6; border-radius: 2px; transition: all 1s linear; }
 .learning h1 span:hover {background-color: gray; }
-
-/* manipulando listas */
 .list { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .list mark { background-color: darkslategrey; color: #F6F6F6; padding: 0 10px; }
 ul { text-align: end; }
@@ -34,12 +33,13 @@ ol .inside-list li { text-align: start; }
 ul, ol { margin: 10px 0 20px 0; width: 100%; list-style-type: none; border: 2px solid darkslategrey; padding: 5px 10px; color: gray; }
 ul p, ol p { margin: 10px 0; }
 
-/* manipulando tabelas */
-table {width: 500px; margin: 0 auto;}
-table thead {background-color: #4D4D4D; color: #F6F6F6;}
+/* manipulating tables */
+.table { margin: 0px 2%; }
+table { width: 100%; }
+table thead {background-color: darkslategrey; color: #F6F6F6;}
 th, td {text-align: left; padding: 5px;}
-tbody td {border-bottom: 1px solid #4D4D4D;}
-tbody tr:nth-child(even) {background-color: #CCC;}
+tbody td {border-bottom: 1px solid darkslategrey;}
+tbody tr:nth-child(even) {background-color: #9999;}
 tbody tr:hover {background-color: lightslategrey;}
 
 /* manipulando formulários */
