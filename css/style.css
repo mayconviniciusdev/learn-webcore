@@ -1,66 +1,71 @@
 /* default project configuration */
-* { box-sizing: border-box; margin: 0; padding: 0; } 
-body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-serif; }
-.barlow-condensed-semibold { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-style: normal; }
-.container, .ap { max-width: 1180px; margin: 0 auto; }
+* {box-sizing: border-box; margin: 0; padding: 0;} 
+body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-serif;}
+.barlow-condensed-semibold {font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-style: normal;}
+.container {max-width: 1180px; margin: 0 auto;}
 
-.header { margin: 0 2% 20px 2%; }
-.header .name { color: darkslategrey; font-size: 30px; margin-bottom: 4px; }
+.header {margin: 0 2% 20px 2%;}
+.header .name {color: #2f4f4f; font-size: 30px; margin-bottom: 4px;}
 .header .links { display: flex; gap: 10px; }
-.links p { color: darkslategrey; text-decoration: underline; font-style: italic; }
-.links span { color: darkslategrey; }
-.links a { color: gray; text-decoration: none; }
-.links a:hover { color: darkslategrey; transition:all 1s linear; }
+.links p {color: #2f4f4f; text-decoration: underline; font-style: italic;}
+.links span {color: #2f4f4f;}
+.links a {color: #808080; text-decoration: none;}
+.links a:hover {color: #2f4f4f; transition:all 1s linear;}
 
-.image { display: flex; justify-content: space-between; margin: 0 2%; gap: 10px; }
-.image picture { flex: 1; }
-picture:first-child img { border-top-left-radius: 30px; }
-picture:last-child img { border-bottom-right-radius: 30px; }
-img { width: 100%; }
+.image {display: flex; justify-content: space-between; margin: 0 2%; gap: 10px;}
+.image picture {flex: 1;}
+picture:first-child img {border-top-left-radius: 30px;}
+picture:last-child img {border-bottom-right-radius: 30px;}
+img {width: 100%;}
 
 /* manipulating lists */
-.learning { margin: 20px 2% 0 2%; }
-.learning h1 { color: darkslategrey; margin-bottom: 4px; }
-.learning h1 span { background-color: darkslategrey; padding: 0 10px; color: #F6F6F6; border-radius: 2px; transition: all 1s linear; }
-.learning h1 span:hover {background-color: gray; }
-.list { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.list mark { background-color: darkslategrey; color: #F6F6F6; padding: 0 10px; }
-ul { text-align: end; }
-ul li { text-decoration: underline; }
-ol {  text-align: start;}
-ol .inside-list { border: 0; list-style-type: disc; padding: 0px 30px; margin: 0; }
-ol .inside-list li { text-align: start; }
-ul, ol { margin: 10px 0 20px 0; width: 100%; list-style-type: none; border: 2px solid darkslategrey; padding: 5px 10px; color: gray; }
-ul p, ol p { margin: 10px 0; }
+.learning {margin: 40px 2%;}
+.learning h1 {color: #2f4f4f;}
+.learning h1 span {background-color: darkslategrey; padding: 0 10px; color: #F6F6F6; border-radius: 2px; transition: all 1s linear;}
+.learning h1 span:hover {background-color: #808080;}
+.learning p {font-style: italic; color: #2f4f4f; margin: 5px 0 15px 0;}
+.list {display: flex; align-items: center; justify-content: space-between; gap: 8px;}
+.list mark {background-color: #2f4f4f; color: #F6F6F6; padding: 0 10px;}
+ul {text-align: end;}
+ul li {text-decoration: underline;}
+ol {text-align: start;}
+ol .inside-list {border: 0; list-style-type: disc; padding: 0px 30px; margin: 0;}
+ol .inside-list li {text-align: start;}
+ul, ol {width: 100%; list-style-type: none; border: 2px solid #2f4f4f; padding: 5px 10px; color: #808080;}
+ul p, ol p {margin: 10px 0;}
 
 /* manipulating tables */
-.table { margin: 0px 2%; }
-table { width: 100%; }
-table thead {background-color: darkslategrey; color: #F6F6F6;}
+.table {margin: 0px 2%;}
+.table p {margin-bottom: 10px; font-style: italic; color: #2f4f4f;}
+table {width: 100%;}
+table thead {background-color: #2f4f4f; color: #F6F6F6;}
 th, td {text-align: left; padding: 5px;}
-tbody td {border-bottom: 1px solid darkslategrey;}
+tbody td {border-bottom: 1px solid #2f4f4f;}
 tbody tr:nth-child(even) {background-color: #9999;}
-tbody tr:hover {background-color: lightslategrey;}
+tbody tr:hover {background-color: #778899;}
 
-/* manipulando formulários */
-.form { max-width: 500px; margin: 50px auto; text-align: start;}
-.form h2 {color: darkslategrey; margin: 0;}
+/* manipulating forms */
+.form {margin: 40px 0; position: relative; padding: 30px 0; width: 100vw; margin-left: -50vw; margin-right: -50vw; left: 50%; right: 50%; background: linear-gradient(30deg, #F6F6F6, #778899);}
+form {max-width: 1180px; margin: 0 auto; color: #2f4f4f;}
+form p {margin: 0 2% 10px 2%; font-style: italic;}
+form fieldset {padding: 40px; border: 2px solid #2f4f4f; border-bottom-left-radius: 40px; border-top-right-radius: 40px; margin: 0 2%;}
+fieldset legend {color: #2f4f4f; padding: 0 10px; font-size: 22px;}
 
-form .label {display: flex; gap: 5px;}
-form label {margin: 20px 0;}
-.label label {width: 100%;}
+.data {display: grid; grid-template-columns: 1fr 2fr; margin: 0 0 30px 0; gap: 1rem;}
+.numbers {display: grid; grid-template-columns: 1fr 2fr; gap: 1rem;}
 
-.age {display: flex; flex-direction: column; margin: 0 0 20px 0;}
-.age label {width: 100%; margin: 0 ;}
+input[type=text], 
+input[type=email], 
+input[type=date],
+input[type=number],
+textarea {width: 100%; padding: 10px; border: 1px solid darkslategrey; border-radius: 8px; outline: 0; margin-top: 5px; height: 40px; background-color: transparent;}
+textarea {resize: none; width: 100%; height: 80px;}
 
-form .select {display: flex; justify-content: space-between; align-items: end;}
-select.cat {width: 70% !important; font-size: 12px !important; padding: 5px !important; appearance: none; -webkit-appearance: none; -moz-appearance: none;}
-input[type=text], input[type=email], textarea, select.cat {width: 100%; font-size: 12px; padding: 10px; border: 1px solid #ccc; border-radius: 10px; outline: 0; margin-top: 5px;}
-textarea {resize: none; width: 100%;}
+.option label {display: grid; grid-template-columns: 0.2fr 1fr; margin: 30px 0 5px 0;}
+.option select {appearance: none; -webkit-appearance: none; -moz-appearance: none;  padding: 4px; border: 1px solid darkslategrey; border-radius: 4px; outline: 0; background-color: transparent;}
 
-.term {align-items: center; display: flex; gap: 5px; margin: 20px 0 5px 0;}
-.termLink {color: #000; text-decoration: none;}
-.termLink:hover {text-decoration: underline;}
+.term {align-items: center; display: flex; gap: 5px; margin: 15px 0 5px 0;}
+.termLink {color: #2f4f4f; text-decoration: underline;}
 
-.submit {width: 100%; padding: 10px; background-color: #EEE; border: 1px solid #DDD; cursor: pointer; border-radius: 5px; font-weight: bold;}
-.submit:hover {background-color: #DDD;}
+.submit {width: 100%; padding: 10px; background-color: #778899; color: #F6F6F6; border: 1px solid #778899; cursor: pointer; border-radius: 5px; font-weight: bold; font-size: 16px;}
+.submit:hover {background-color: #2f4f4f; color: #F6F6F6; border: 1px solid #2f4f4f;}

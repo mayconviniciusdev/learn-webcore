@@ -83,41 +83,44 @@
         </h1>
 
         <!-- lists -->
+        <p>→ As listas em HTML servem para organizar informações em sequência ou em tópicos.</p>
         <div class="list">
-        <ul>
-          <p><mark>Conceitos aprendidos:</mark></p>
-          <li>HTML e CSS</li>
-          <li>Formatação de textos</li>
-          <li>Comentário no HTML e CSS</li>
-          <li>Identação</li>
-          <li>Atributos</li>
-        </ul>
+          <ul>
+            <p><mark>Conceitos aprendidos:</mark></p>
+            <li>HTML e CSS</li>
+            <li>Formatação de textos</li>
+            <li>Comentário no HTML e CSS</li>
+            <li>Identação</li>
+            <li>Atributos</li>
+          </ul>
 
-        <ol>
-          <p><mark>Aprendendo também:</mark></p>
-          <li>Como usar fontes externas</li>
-          <li>
-            Listas, dentro de listas:
-            <ul class="inside-list">
-              <li>Tabelas</li>
-              <li>Formulários</li>
-              <li>Imagens responsivas</li>
-            </ul>
-          </li>
-          <li>Identação</li>
-        </ol>
+          <ol>
+            <p><mark>Aprendendo também:</mark></p>
+            <li>Como usar fontes externas</li>
+            <li>
+              Listas, dentro de listas:
+              <ul class="inside-list">
+                <li>Tabelas</li>
+                <li>Formulários</li>
+                <li>Imagens responsivas</li>
+              </ul>
+            </li>
+            <li>Identação</li>
+          </ol>
         </div>
       </section>
 
       <!-- tables -->
       <section class="table">
+        <p>→ As tabelas permitem organizar informações de forma estruturada.</p>
+        
         <table>
           <thead>
             <tr>
               <th>Nome</th>
               <th>Sobrenome</th>
               <th>Cargo</th>
-              <th>Iade</th>
+              <th>Idade</th>
             </tr>
           </thead>
 
@@ -159,57 +162,60 @@
           </tbody>
         </table>
       </section>
+
+      <!-- FORMS -->
+      <section class="form">
+        <form action="/html/login.html" method="POST">
+          <p>→ Este formulário foi criado para praticar diferentes tipos de inputs do HTML5.</p>
+          
+          <fieldset>
+            <legend class="barlow-condensed-semibold">Tire suas dúvidas conosco!</legend>
+            <div class="data">
+              <label>
+                Como você se chama?<br/>
+                <input type="text" name="name" required minlength="4">
+              </label>
+              
+              <label>
+                Qual seu email favorito?<br/>
+                <input type="email" name="email" regex="(^[a-zA-Z0-9_.+\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$)" required>
+              </label>
+            </div>
+
+            <div class="numbers">
+              <label>
+                Em que ano você nasceu?
+                <input type="date" name="birthdate" required min="2000-01-01">
+              </label>
+
+              <label>
+                Quantos meses está na plataforma?
+                <input type="number" name="age" required max="10">
+              </label>
+            </div>
+
+            <div class="option">
+              <label>
+                <p>Categoria da dúvida:</p>
+                <select required>
+                  <option value="geral">Geral</option>
+                  <option value="plataforma">Plataforma</option>
+                  <option value="investimentos">Ivestimentos</option>
+                  <option value="servicos">Serviços</option>
+                </select>
+              </label>
+              <textarea name="description" required>Qual a sua dúvida?</textarea>
+            </div>
+
+            <label class="term">
+              <input type="checkbox" required>
+                Declaro que li e aceito os 
+                <a href="/html/termosdeuso.html" target="_blank" class="termLink ">termos de uso!</a>
+            </label>
+            <input type="submit" value="ENVIAR DÚVIDA" class="submit barlow-condensed-semibold">
+          </fieldset>
+        </form>
+      </section>
     </div>
-    
-    <!-- FORMS -->
-    <section class="form">
-      <h2>Tire suas dúvidas!</h2>
-
-      <form action="/html/login.html" method="POST">
-        <div class="label">
-          <label>
-            Como você se chama?<br/>
-            <input type="text" name="name" required minlength="4">
-          </label>
-
-          <label>
-            Qual seu email?<br/>
-            <input type="email" name="email" regex="(^[a-zA-Z0-9_.+\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$)" re>
-          </label>
-        </div>
-
-        <div class="age">
-          <label>
-            Em que ano você nasceu?
-            <input type="date" name="birthdate" required min="2000-01-01">
-          </label>
-
-          <label>
-              Meses na plataforma?
-              <input type="number" name="age" required max="10">
-          </label>
-        </div>
-
-        <div class="select">
-          Categoria da dúvida:
-          <select class="cat" required>
-            <option value="geral">Geral</option>
-            <option value="plataforma">Plataforma</option>
-            <option value="investimentos">Ivestimentos</option>
-            <option value="servicos">Serviços</option>
-          </select>
-        </div>
-
-        <textarea name="description" required>Qual a sua dúvida?</textarea>
-
-        <label class="term">
-           <input type="checkbox" required minlength="10">
-            Declaro que li e aceito os 
-            <a href="/html/termosdeuso.html" target="_blank" class="termLink">termos de uso!</a>
-        </label>
-        
-        <input type="submit" value="ENVIAR DÚVIDA" class="submit">
-      </form>
-    </section>
   </body>
 </html>
