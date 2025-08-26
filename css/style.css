@@ -26,6 +26,15 @@ img {width: 100%;}
 .learning p {font-style: italic; color: #2f4f4f; margin: 5px 0 15px 0;}
 .list {display: flex; align-items: center; justify-content: space-between; gap: 8px;}
 .list mark {background-color: #2f4f4f; color: #F6F6F6; padding: 0 10px;}
+
+.description-list {max-width: 900px; margin: 0 auto;}
+dl {background-color: #2f4f4f; padding: 20px 40px; margin-top: 20px; border-radius: 20px; box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); }
+dl p {color: #F6F6F6 !important;}
+dt {padding-bottom: 5px; font-size: 18px; color: #778899; font-style: italic;}
+dd {padding-bottom: 20px;}
+dd ul {list-style-type: circle; margin-left: 15px;}
+dd li {text-align: left; color: #F6F6F6; text-decoration: none !important;}
+
 ul {text-align: end;}
 ul li {text-decoration: underline;}
 ol {text-align: start;}
