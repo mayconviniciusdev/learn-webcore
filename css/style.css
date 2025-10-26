@@ -5,12 +5,12 @@ body { margin: 50px 0; background-color: #F6F6F6; font-family: "Oswald", sans-se
 .container {max-width: 1180px; margin: 0 auto;}
 
 .header {margin: 0 2% 20px 2%;}
-.header .name {color: #2f4f4f; font-size: 30px; margin-bottom: 4px;}
+.header .name {color: #2f2f2f; font-size: 30px; margin-bottom: 4px;}
 .header .links { display: flex; gap: 10px; }
-.links p {color: #2f4f4f; text-decoration: underline; font-style: italic;}
-.links span {color: #2f4f4f;}
+.links p {color: #2f2f2f; text-decoration: underline; font-style: italic;}
+.links span {color: #2F4F4F;}
 .links a {color: #808080; text-decoration: none;}
-.links a:hover {color: #2f4f4f; transition:all 1s linear;}
+.links a:hover {color: #2F4F4F; transition:all 1s linear;}
 
 .image {display: flex; justify-content: space-between; margin: 0 2%; gap: 10px;}
 .image picture {flex: 1;}
@@ -20,15 +20,15 @@ img {width: 100%;}
 
 /* manipulating lists */
 .learning {margin: 40px 2%;}
-.learning h1 {color: #2f4f4f;}
+.learning h1 {color: #2F4F4F;}
 .learning h1 span {background-color: darkslategrey; padding: 0 10px; color: #F6F6F6; border-radius: 2px; transition: all 1s linear;}
 .learning h1 span:hover {background-color: #808080;}
-.learning p {font-style: italic; color: #2f4f4f; margin: 5px 0 15px 0;}
+.learning p {font-style: italic; color: #2F4F4F; margin: 5px 0 15px 0;}
 .list {display: flex; align-items: center; justify-content: space-between; gap: 8px;}
-.list mark {background-color: #2f4f4f; color: #F6F6F6; padding: 0 10px;}
+.list mark {background-color: #2F4F4F; color: #F6F6F6; padding: 0 10px;}
 
 .description-list {max-width: 900px; margin: 0 auto;}
-dl {background-color: #2f4f4f; padding: 20px 40px; margin-top: 20px; border-radius: 20px; box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); }
+dl {background-color: #2F4F4F; padding: 20px 40px; margin-top: 20px; border-radius: 20px; box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); }
 dl p {color: #F6F6F6 !important;}
 dt {padding-bottom: 5px; font-size: 18px; color: #778899; font-style: italic;}
 dd {padding-bottom: 20px;}
@@ -40,25 +40,25 @@ ul li {text-decoration: underline;}
 ol {text-align: start;}
 ol .inside-list {border: 0; list-style-type: disc; padding: 0px 30px; margin: 0;}
 ol .inside-list li {text-align: start;}
-ul, ol {width: 100%; list-style-type: none; border: 2px solid #2f4f4f; padding: 5px 10px; color: #808080;}
+ul, ol {width: 100%; list-style-type: none; border: 2px solid #2F4F4F; padding: 5px 10px; color: #808080;}
 ul p, ol p {margin: 10px 0;}
 
 /* manipulating tables */
 .table {margin: 0px 2%;}
-.table p {margin-bottom: 10px; font-style: italic; color: #2f4f4f;}
+.table p {margin-bottom: 10px; font-style: italic; color: #2F4F4F;}
 table {width: 100%;}
-table thead {background-color: #2f4f4f; color: #F6F6F6;}
+table thead {background-color: #2F4F4F; color: #F6F6F6;}
 th, td {text-align: left; padding: 5px;}
-tbody td {border-bottom: 1px solid #2f4f4f;}
+tbody td {border-bottom: 1px solid #2F4F4F;}
 tbody tr:nth-child(even) {background-color: #9999;}
 tbody tr:hover {background-color: #778899;}
 
 /* manipulating forms */
 .form {margin: 40px 0; position: relative; padding: 30px 0; width: 100vw; margin-left: -50vw; margin-right: -50vw; left: 50%; right: 50%; background: linear-gradient(30deg, #F6F6F6, #778899);}
-form {max-width: 1180px; margin: 0 auto; color: #2f4f4f;}
+form {max-width: 1180px; margin: 0 auto; color: #2F4F4F;}
 form p {margin: 0 2% 10px 2%; font-style: italic;}
-form fieldset {padding: 40px; border: 2px solid #2f4f4f; border-bottom-left-radius: 40px; border-top-right-radius: 40px; margin: 0 2%;}
-fieldset legend {color: #2f4f4f; padding: 0 10px; font-size: 22px;}
+form fieldset {padding: 40px; border: 2px solid #2F4F4F; border-bottom-left-radius: 40px; border-top-right-radius: 40px; margin: 0 2%;}
+fieldset legend {color: #2F4F4F; padding: 0 10px; font-size: 22px;}
 
 .data {display: grid; grid-template-columns: 1fr 2fr; margin: 0 0 30px 0; gap: 1rem;}
 .numbers {display: grid; grid-template-columns: 1fr 2fr; gap: 1rem;}
@@ -74,7 +74,15 @@ textarea {resize: none; width: 100%; height: 80px;}
 .option select {appearance: none; -webkit-appearance: none; -moz-appearance: none;  padding: 4px; border: 1px solid darkslategrey; border-radius: 4px; outline: 0; background-color: transparent;}
 
 .term {align-items: center; display: flex; gap: 5px; margin: 15px 0 5px 0;}
-.termLink {color: #2f4f4f; text-decoration: underline;}
+.termLink {color: #2F4F4F; text-decoration: underline;}
 
 .submit {width: 100%; padding: 10px; background-color: #778899; color: #F6F6F6; border: 1px solid #778899; cursor: pointer; border-radius: 5px; font-weight: bold; font-size: 16px;}
-.submit:hover {background-color: #2f4f4f; color: #F6F6F6; border: 1px solid #2f4f4f;}
+.submit:hover {background-color: #2F4F4F; color: #F6F6F6; border: 1px solid #2F4F4F;}
+
+.grid {margin: 0 2%;}
+.grid-list {display: grid; gap: 10px; margin-top: 10px; grid-column: repeat(3, 1fr);}
+.grid-item {background-color: #2F4F4F; border-radius: 12px; padding: 20px; font-size: 20px; color: #F6F6F6;}
+.item-1 {grid-column: 1 / span 2;}
+.item-3 {grid-row: 2 / 4 ; grid-column: 1 / 2;}
+.item-4 {grid-column: 2 / 4;}
+.item-5 {grid-row: 3 / 5; grid-column: 2 / 3;}
