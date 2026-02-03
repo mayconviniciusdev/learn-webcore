@@ -1,5 +1,6 @@
 # 🎹 Beat Keys
 **Beat Keys** é um projeto de estudo em **HTML, CSS e JavaScript** que simula um pequeno instrumento musical no navegador, onde o usuário pode tocar sons usando o teclado ou criar composições digitando sequências de teclas.
+- Acesse aqui: [Beat Keys](http://learn-webcore.mayconviniciusdev.com/beat-keys)
 
 ### 📌 Objetivo do projeto
 Este projeto foi desenvolvido com foco em praticar: **manipulação do DOM**, **eventos de teclado**, **reprodução de áudio com JavaScript**, **animações e efeitos visuais com CSS** e **rganização básica de um projeto front-end**.
@@ -20,18 +21,18 @@ Este projeto foi desenvolvido com foco em praticar: **manipulação do DOM**, **
 📂 Estrutura do projeto:
   /beat-keys
   │
-  ├── index.html
-  ├── style.css
-  ├── script.js
   ├── sounds/
-  │   ├── keyq.wav
-  │   ├── keyw.wav
-  │   ├── keye.wav
   │   ├── keya.wav
-  │   ├── keys.wav
+  │   ├── keyc.wav
   │   ├── keyd.wav
-  │   ├── keyz.wav
+  │   ├── keye.wav
+  │   ├── keyq.wav
+  │   ├── keys.wav
+  │   ├── keyw.wav
   │   ├── keyx.wav
-  │   └── keyc.wav
-  └── README.md
+  │   └── keyz.wav
+  ├── index.html
+  ├── README.md
+  ├── script.js
+  └── style.css
 ```
