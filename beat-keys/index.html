@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Beat Keys</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1 class="title">Beat Keys</h1>
+		<main class="container">
+			<section class="key-grid">
+				<button data-key="keyq" class="key-pad">Q</button>
+				<button data-key="keyw" class="key-pad">W</button>
+				<button data-key="keye" class="key-pad">E</button>
+
+				<button data-key="keya" class="key-pad">A</button>
+				<button data-key="keys" class="key-pad">S</button>
+				<button data-key="keyd" class="key-pad">D</button>
+
+				<button data-key="keyz" class="key-pad">Z</button>
+				<button data-key="keyx" class="key-pad">X</button>
+				<button data-key="keyc" class="key-pad">C</button>
+			</section>
+			
+			<section class="composer">
+				<input type="text" id="composerInput" placeholder="Digite sua composição..." class="composer-input">
+				<button>TOCAR COMPOSIÇÃO</button>
+			</section>
+		</main>
+
+		<footer>
+			<span>Desenvolvido por:</span>
+			<strong>Maycon Vinícius</strong>
+		</footer>
+
+		<audio id="sound-keyq" src="sounds/keyq.wav"></audio>
+		<audio id="sound-keyw" src="sounds/keyw.wav"></audio>
+		<audio id="sound-keye" src="sounds/keye.wav"></audio>
+		<audio id="sound-keya" src="sounds/keya.wav"></audio>
+		<audio id="sound-keys" src="sounds/keys.wav"></audio>
+		<audio id="sound-keyd" src="sounds/keyd.wav"></audio>
+		<audio id="sound-keyz" src="sounds/keyz.wav"></audio>
+		<audio id="sound-keyx" src="sounds/keyx.wav"></audio>
+		<audio id="sound-keyc" src="sounds/keyc.wav"></audio>
+
+		<script src="script.js"></script>
+	</body>
+</html>
