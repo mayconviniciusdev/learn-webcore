@@ -1,0 +1,21 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {min-height: 100vh; display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center; background: linear-gradient(135deg, #1F1F1F, #2D2D2D); font-family: Tahoma, sans-serif; color: #F6F6F6;}
+h1 {margin-bottom: 40px;}
+
+.digital-clock {margin-bottom: 20px;}
+.digital-time {font-size: 40px; font-weight: bold;}
+
+.analog-clock {position: relative;}
+.clock-face {width: 340px; height: 340px; border: 2px solid #F6F6F6; border-radius: 40%; background-color: rgba(0, 0, 0, 0.2); position: relative;}
+.clock-markers {position: absolute; inset: 0;}
+.marker {position: absolute; width: 145px; height: 5px; top: 50%; left: 50%; transform-origin: left center; transform: rotate(var(--rotation));}
+.marker::after {content: ''; width: 15px; height: 100%; background-color: #F6F6F6; display: block; margin-left: auto;}
+
+.clock-hands {position: absolute; inset: 0;}
+.hand {overflow: visible; position: absolute; top: 50%; left: 50%; transform-origin: 0 50%; transform: translate(0, -50%) rotate(0deg); border-radius: 50px;}
+.hand-second {width: 90px; height: 2px; background-color: #F00; clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);}
+.hand-minute {width: 110px; height: 5px; background-color: #F6F6F6; clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);}
+.hand-hour {width: 60px; height: 5px; background-color: #F6F6F6; z-index: 3; clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);}
+.clock-center {width: 15px; height: 15px; background-color: #F6F6F6; border-radius: 40%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+footer {margin-top: 40px; font-size: 12px; opacity: 0.7;}
