@@ -1,0 +1,174 @@
+* {margin: 0;
+padding: 0; 
+box-sizing: border-box; 
+font-family: Tahoma, sans-serif;}
+body {min-height: 100vh; 
+background: linear-gradient(135deg, #1F1F1F, #2D2D2D);
+display: flex; 
+justify-content: center; 
+align-items: center;}
+
+#container {padding: 20px;
+border-radius: 20px;
+background-color: #F6F6F6;
+box-shadow: 20px 20px 90px rgba(226, 219, 219, 0.2);}
+h1 {margin-bottom: 25px;
+font-size: 30px;
+font-weight: 100;
+text-align: center;}
+  
+.search-weather {gap: 8px;
+display: flex; 
+align-items: center;
+border: 1px solid #BDBDBD;
+border-radius: 8px;
+padding: 12px 16px;}
+.search-weather input {width: 100%;
+font-size: 14px;
+background-color: transparent;
+border: none;}
+.search-weather input:focus-visible {outline: none;}
+.search-weather input::placeholder {color: #888;}
+.search-weather button {border: none; 
+border-radius: 8px; 
+background: transparent; 
+cursor: pointer;}
+.search-weather button:hover {opacity: 70%;}
+
+.weather-result {padding-top:25px; display: none;}
+.weather-result.show {display: block;}
+.weather-result .city {text-align: center;
+font-size: 24px; 
+font-weight: 600;
+letter-spacing: 0.5px;
+margin-bottom: 8px;
+color: #372F3F;}
+
+.temp {display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+background: linear-gradient(90deg, #372F3F, #2D2D2D);
+color: #BDBDBD;
+border-radius: 20px;
+padding: 20px;}
+.temp img {filter: drop-shadow(4px 4px 4px rgba(112, 108, 108, 0.35));}
+.temp .temp-value {font-size: 30px; font-weight: bold;}
+.temp .temp-description {text-transform: capitalize;}
+
+.more-weather--info {margin-top: 25px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px;}
+.more-weather--info .infos {display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 4px 4px 4px rgba(112, 108, 108, 0.35);
+background-color: #BDBDBD;}
+.more-weather--info .infos h2 {font-size: 14px;}
+.more-weather--info .infos i {font-size: 25px; width: 20%; text-align: center;}
+
+#temp-max-icon {color: #7F1D1D;}
+#temp-min-icon {color: #0284C7;}
+#humidity-icon {color: #0EA6E9;}
+#wind-icon {color: #7C3AED;}
+
+.message {display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 20px;}
+.message img {width: 200px;
+margin-top: 20px;
+filter: drop-shadow(4px 4px 4px rgba(112, 108, 108, 0.35));}
+
+footer {font-size: 12px; opacity: 0.7; text-align: center;}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Tablets e celulares grandes */
+@media (max-width: 768px) {
+  #container {
+    width: 90%;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .temp {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .temp .temp-value {
+    font-size: 26px;
+  }
+
+  .more-weather--info {
+    gap: 10px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  #container {
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .search-weather {
+    padding: 10px 12px;
+  }
+
+  .search-weather input {
+    font-size: 13px;
+  }
+
+  .weather-result .city {
+    font-size: 20px;
+  }
+
+  .temp {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .temp img {
+    width: 80px;
+  }
+
+  .temp .temp-value {
+    font-size: 24px;
+  }
+
+  .more-weather--info {
+    grid-template-columns: 1fr;
+  }
+
+  .more-weather--info .infos {
+    padding: 12px;
+  }
+
+  footer {
+    font-size: 11px;
+  }
+}

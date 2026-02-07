@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>Climate</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/ff3aca8bd5.js" crossorigin="anonymous"></script>
+  </head> 
+
+  <body>
+    <div id="container">
+      <h1>Antes de sair, <br/> confira o clima...</h1>
+
+      <main>
+        <form class="search-weather">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="search" id="city-name" name="city-name" placeholder="Buscar cidade..."/>
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <div class="weather-result">
+          <div class="city">CIDADE, UF</div>
+
+          <div class="weather-info">
+            <div class="temp">
+              <img src="http://openweathermap.org/img/wn/10d@2x.png"/>
+              <div>
+                <div class="temp-value">24 <sup>ºC</sup></div>
+                <div class="temp-description">Ensolarado</div>
+              </div>
+            </div>
+
+            <div class="more-weather--info">
+              <div class="infos">
+                <i class="fa-solid fa-temperature-high" id="temp-max-icon"></i>
+                <div>
+                  <h2>Temp. Max</h2>
+                  <p id="temp-max">-- <sup>ºC</sup></p>
+                </div>
+              </div>
+
+              <div class="infos">
+                <i class="fa-solid fa-temperature-low" id="temp-min-icon"></i>
+                <div>
+                  <h2>Temp. Min</h2>
+                  <p id="temp-min">-- <sup>ºC</sup></p>
+                </div>
+              </div>
+
+              <div class="infos">
+                <i class="fa-solid fa-droplet" id="humidity-icon"></i>
+                <div>
+                  <h2>Humidade</h2>
+                  <p id="humidity">--</p>
+                </div>
+              </div>
+
+              <div class="infos">
+                <i class="fa-solid fa-wind" id="wind-icon"></i>
+                <div>
+                  <h2>Vento</h2>
+                  <p id="wind">-- <span>km/h</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="message"></div>
+      </main>
+
+      <footer>
+        <span>Desenvolvido por:</span>
+        <strong>maicoding</strong>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
