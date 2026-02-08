@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>OX Game</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+
+	<body>
+		<div class="game">
+			<main >
+				<h1>Jogo da Velha!</h1>
+
+				<section class="tray tray-time">
+					<div data-item="a1" class="line bottom right"></div>
+					<div data-item="a2" class="line bottom right"></div>
+					<div data-item="a3" class="line bottom"></div>
+
+					<div data-item="b1" class="line bottom right"></div>
+					<div data-item="b2" class="line bottom right"></div>
+					<div data-item="b3" class="line bottom"></div>
+
+					<div data-item="c1" class="line right"></div>
+					<div data-item="c2" class="line right"></div>
+					<div data-item="c3" class="line"></div>
+				</section>
+
+				<section class="panel">
+					<div class="status">
+						<div class="label">A VEZ É DO:</div>
+						<div class="value time">--</div>
+					</div>
+				</section>
+			</main>
+
+			<div class="endgame hidden">
+				<div class="endgame-box">
+					<span class="endgame-text">--</span>
+				</div>
+			</div>
+
+			<footer>
+				<span>Desenvolvido por:</span>
+				<strong>maicoding</strong>
+			</footer>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Tahoma, sans-serif;}
+body {min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #1F1F1F, #2D2D2D);
+color: #F6F6F6;}
+
+.game {background-color: #1F1F1F;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+text-align: center;}
+h1 {font-size: 30px; 
+font-weight: 100;
+letter-spacing: 1px;
+margin-bottom: 80px;}
+
+.tray {width: 500px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+margin: 0 auto 25px;}
+.line {width: 170px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 64px;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.2s ease, transform 0.1s ease;}
+.line:hover {background-color: rgba(255, 255, 255, 0.08);}
+
+.bottom {border-bottom: 2px solid #2D2D2D;}
+.right {border-right: 2px solid #2D2D2D;}
+
+.panel {
+padding: 20px 0;
+border-radius: 8px;
+background-color: #2F4F4F;
+margin: 40px 0;}
+.label {font-size: 12px;
+letter-spacing: 1px;
+color: #F6F6F6;
+margin-bottom: 6px;}
+.value {font-size: 22px;color: #888;}
+
+.endgame {position: fixed;
+inset: 0;
+background: rgba(0, 0, 0, 0.75);
+backdrop-filter: blur(4px);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 10;
+animation: fadeIn 0.3s ease;}
+.endgame-box {background: #2F4F4F;
+padding: 40px 60px;
+border-radius: 12px;
+box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+text-align: center;
+animation: scaleIn 0.3s ease;}
+
+.endgame-text {font-size: 32px;
+font-weight: bold;
+letter-spacing: 2px;
+color: #F6F6F6;}
+.hidden {display: none;}
+
+@keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+@keyframes scaleIn {from {transform: scale(0.8);} to{transform: scale(1);}}
+
+footer {font-size: 12px; 
+opacity: 0.7;
+text-align: center;
+margin-top: 20px;}
+
+@media (max-width: 600px) {
+  h1 {font-size: 22px;}
+  .game {width: 80%;}
+
+  .tray {width: 200px; }
+  .line {width: 70px; font-size: 48px;}
+
+  .panel {margin: 25px 0; padding: 15px 0;}
+  .value {font-size: 18px;}
+
+  .endgame-box {padding: 30px 20px; width: 80%;}
+  .endgame-text {font-size: 24px;}
+}
