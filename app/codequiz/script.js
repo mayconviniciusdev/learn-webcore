@@ -5,88 +5,79 @@ const elements = {
   resultScreen: document.getElementById("result-screen"),
   startButton: document.getElementById("start-button"),
   restartButton: document.getElementById("restart-button"),
-  question: document.querySelector(".quiz-question"),
-  options: document.querySelector(".quiz-options"),
+  questionText: document.querySelector(".quiz-question"),
+  optionsContainer: document.querySelector(".quiz-options"),
   progressBar: document.querySelector(".progress-bar"),
   resultTitle: document.querySelector(".result-title"),
   resultPercentage: document.querySelector(".result-percentage"),
   resultDescription: document.querySelector(".result-description")
 };
 
+document.addEventListener("DOMContentLoaded", initializeApp);
 elements.startButton.addEventListener("click", startQuiz);
 elements.restartButton.addEventListener("click", restartQuiz);
 
-document.addEventListener("DOMContentLoaded", () => {
-  elements.startScreen.classList.remove("hidden");
-  elements.quizScreen.classList.add("hidden");
-});
+function showScreen(screen) {
+  const screens = ["start", "quiz", "result"];
+  screens.forEach(s => {
+    const el = elements[`${s}Screen`];
+    el.classList.toggle("hidden", s !== screen);
+  });
+}
+
+function initializeApp() {showScreen("start");}
 
 function startQuiz() {
-  elements.startScreen.classList.add("hidden");
-  elements.quizScreen.classList.remove("hidden");
+  appState.currentQuestionIndex = 0;
+  appState.score = 0;
+
+  showScreen("quiz");
   renderQuestion();
 }
 
 function renderQuestion() {
   const question = questions[appState.currentQuestionIndex];
+  if (!question) return finishQuiz()
 
-  if (!question) {
-    finishQuiz();
-    return;
-  }
+  elements.questionText.textContent = question.question;
+  elements.optionsContainer.innerHTML = "";
 
-  elements.question.textContent = question.question;
-  elements.options.innerHTML = "";
-
-  question.options.forEach((option, index) => {
+  question.options.forEach((optionText, index) => {
     const div = document.createElement("div");
-    div.classList.add("option");
-    div.textContent = option;
+    div.className = "option";
+    div.textContent = optionText;
     div.addEventListener("click", () => handleAnswer(index));
-    elements.options.appendChild(div);
+    elements.optionsContainer.appendChild(div);
   });
 
   updateProgress();
 }
 
 function handleAnswer(selectedIndex) {
-  const question = questions[appState.currentQuestionIndex];
+  const currentQuestion = questions[appState.currentQuestionIndex];
 
-  if (selectedIndex === question.answer) {
-    appState.score++;
-  }
+  if (selectedIndex === currentQuestion.answer) {appState.score++;}
 
   appState.currentQuestionIndex++;
   renderQuestion();
 }
 
 function updateProgress() {
-  const progress =
-    (appState.currentQuestionIndex / questions.length) * 100;
+  const progress = (appState.currentQuestionIndex / questions.length) * 100;
   elements.progressBar.style.width = `${progress}%`;
 }
 
 function finishQuiz() {
-  elements.quizScreen.classList.add("hidden");
-  elements.resultScreen.classList.remove("hidden");
+  showScreen("result");
 
-  const percentage = Math.floor(
-    (appState.score / questions.length) * 100
-  );
-
+  const percentage = Math.floor((appState.score / questions.length) * 100);
   elements.resultPercentage.textContent = `Você teve um aproveitamento de ${percentage}%`;
 
-  if (percentage < 40) {
-    elements.resultTitle.textContent = "Precisamos estudar mais!";
-  } else if (percentage < 70) {
-    elements.resultTitle.textContent = "Bom progresso!";
-  } else {
-    elements.resultTitle.textContent = "Excelente desempenho!";
-  }
-
-  elements.resultDescription.textContent =
-    `Acertando ${appState.score} questões de um total de ${questions.length}!`;
-
+  elements.resultTitle.textContent = 
+  percentage < 40 ? "Precisamos estudar mais!" :
+  percentage < 70 ? "Bom progresso!" : "Excelente desempenho!";
+  
+  elements.resultDescription.textContent = `Acertando ${appState.score} questões de um total de ${questions.length}!`;
   elements.progressBar.style.width = "100%";
 }
 
@@ -94,7 +85,6 @@ function restartQuiz() {
   appState.currentQuestionIndex = 0;
   appState.score = 0;
 
-  elements.resultScreen.classList.add("hidden");
-  elements.startScreen.classList.remove("hidden");
+  showScreen("start");
   elements.progressBar.style.width = "0%";
 }
