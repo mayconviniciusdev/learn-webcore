@@ -90,6 +90,5 @@ opacity: 0.80;}
   .app-content {display: flex; align-items: center; justify-content: center;}
   .app-content > * {width: 100%;}
 
-  .quiz-question {margin-top: 20px;}
   .option {font-size: 14px;}
 }

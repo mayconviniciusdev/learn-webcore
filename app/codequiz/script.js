@@ -16,6 +16,11 @@ const elements = {
 elements.startButton.addEventListener("click", startQuiz);
 elements.restartButton.addEventListener("click", restartQuiz);
 
+document.addEventListener("DOMContentLoaded", () => {
+  elements.startScreen.classList.remove("hidden");
+  elements.quizScreen.classList.add("hidden");
+});
+
 function startQuiz() {
   elements.startScreen.classList.add("hidden");
   elements.quizScreen.classList.remove("hidden");
