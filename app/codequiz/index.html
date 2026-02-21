@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Codequiz Web App</title>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/ff3aca8bd5.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div class="header">
+          <h1>Codequiz</h1>
+          <strong>maicoding</strong>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+      </header>
+
+      <section class="app-content">
+        <div class="start" id="start-screen">
+          <h2>Teste seus conhecimentos em Desenvolvimento Web</h2>
+          <p>Responda às perguntas e descubra seu nível.</p>
+          <button class="btn" id="start-button">Iniciar Quiz</button>
+        </div>
+
+        <div id="quiz-screen">
+          <h2 class="quiz-question"></h2>
+          <div class="quiz-options"></div>
+        </div>
+
+        <div class="result hidden" id="result-screen">
+          <i class="fa-solid fa-trophy"></i>
+          <h2 class="result-title"></h2>
+          <p class="result-percentage"></p>
+          <p class="result-description"></p>
+          <button class="btn" id="restart-button">Refazer Quiz!</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

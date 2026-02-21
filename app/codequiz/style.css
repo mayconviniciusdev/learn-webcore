@@ -1,0 +1,95 @@
+:root {--dark: #1F1F1F;
+--gray: #2F2F2F;
+--graphite: #808080;
+--green: #2F4F4F;
+--white: #F6F6F6;
+--blue: #004369;
+--warning: #FBC02D;
+--danger: #E53935;
+--radius: 12px;}
+.btn {padding: 10px 20px;
+margin-top: 20px;
+border: none;
+background: var(--blue);
+border-radius: var(--radius);
+color: var(--white);
+cursor: pointer;
+font-size: 18px;
+transition: 0.2s;}
+.btn:hover {opacity: 0.60;}
+
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;}
+body {min-height: 100vh;
+font-family: Tahoma, sans-serif;
+background: linear-gradient(135deg, var(--dark), var(--green));
+color: var(--white);
+display: flex;
+justify-content: center;
+align-items: center;}
+
+main {width: 100%;
+max-width: 800px;  
+background: rgba(255, 255, 255, 0.08);
+box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+border-radius: var(--radius);
+display: flex;
+overflow: hidden;
+flex-direction: column;}
+
+header {padding: 20px; background: var(--green);}
+.header {margin-bottom: 25px;}
+.header strong {font-size: 13px; opacity: 0.50;}
+.progress {height: 6px;
+background: var(--dark);
+border-radius: 4px;
+overflow: hidden;}
+.progress-bar {height: 100%;
+width: 0%;
+transition: width 0.4s ease;
+opacity: .70;
+background: var(--white);}
+
+.app-content {padding: 25px; flex: 1;}
+
+.start {text-align: center;}
+.start h2 {margin-bottom: 15px;}
+.start p {color: var(--graphite); margin-bottom: 25px;}
+
+.quiz-question {font-size: 20px; margin-bottom: 20px;}
+.quiz-options {display: flex;
+flex-direction: column;
+gap: 10px;}
+
+.option {background: var(--green);
+padding: 12px;
+border-radius: 8px;
+cursor: pointer;
+border: 1px solid transparent;
+transition: all 0.2s ease;}
+.option:hover {border: 1px solid var(--graphite);
+opacity: 0.60;}
+
+.result {text-align: center;}
+.fa-trophy {height: 90px; margin-bottom: 15px; font-size: 80px; color: var(--warning);}
+.result-title {font-size: 20px; margin-bottom: 10px;}
+.result-percentage {font-size: 25px;
+font-weight: bold;
+color: var(--warning);
+margin-bottom: 10px;
+opacity: 0.80;}
+.result-description {color: var(--danger);
+margin-bottom: 18px;
+opacity: 0.80;}
+.hidden {display: none;}
+
+@media (max-width: 768px) {
+  main {height: 100vh; border-radius: 0; max-width: 100%;}
+
+  .app-content {display: flex; align-items: center; justify-content: center;}
+  .app-content > * {width: 100%;}
+
+  .quiz-question {margin-top: 20px;}
+  .option {font-size: 14px;}
+}
