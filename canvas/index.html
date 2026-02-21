@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Canvas Drawing</title>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css"/>
+		<script src="https://kit.fontawesome.com/ff3aca8bd5.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<main>
+			<header>
+        <h1>Canvas Drawing</h1>
+    	</header>
+
+			<section class="canvas-section">
+					<canvas id="canvas" class="canvas" width="800" height="400"></canvas>
+			</section>
+
+			<section class="toolbar">
+				<div class="toolbar-colors">
+					<button class="color-picker is-active" data-color="#000000" style="background:#000000;"></button>
+					<button class="color-picker" data-color="#2979FF" style="background:#2979FF;"></button>
+					<button class="color-picker" data-color="#E53935" style="background:#E53935;"></button>
+					<button class="color-picker" data-color="#43A047" style="background:#43A047;"></button>
+					<button class="color-picker" data-color="#FDD835" style="background:#FDD835;"></button>
+					<button class="color-picker" data-color="#757575" style="background:#757575;"></button>
+				</div>
+
+				<div>
+					<button class="btn btn-undo">DESFAZER</button>
+					<button class="btn btn-clear">LIMPAR QUADRO</button>
+					<button class="btn btn-download"><i class="fa-solid fa-download"></i></button>
+				</div>
+			</section>
+
+			<footer>
+				<span>Desenvolvido por:</span>
+				<strong>maicoding</strong>
+			</footer>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
