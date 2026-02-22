@@ -43,7 +43,6 @@ function showInfo(json) {
   document.querySelector('#temp-min').innerHTML = `${Math.round(json.tempMin)} <sup>ºC</sup>`;
   document.querySelector('#humidity').innerHTML = `${json.humidity}%`;
   document.querySelector('#wind').innerHTML = `${json.windSpeed} <span>km/h</span>`;
-
 }
 
 function clearInfo() {
